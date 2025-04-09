@@ -4,6 +4,6 @@ import animalRouter from "../routes/animal.route.js";
 const app = express();
 
 app.use(express.json());
-app.use("/api/animal", animalRouter);
+app.use("/api/animals", animalRouter);
 
 export default app;

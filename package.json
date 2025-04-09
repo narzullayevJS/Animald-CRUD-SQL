@@ -16,5 +16,14 @@
     "morgan": "^1.10.0",
     "nodemon": "^3.1.9",
     "pg": "^8.14.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n17nt/AnimalCrudPsql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/n17nt/AnimalCrudPsql/issues"
+  },
+  "homepage": "https://github.com/n17nt/AnimalCrudPsql#readme"
 }
