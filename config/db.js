@@ -1,13 +1,16 @@
-import pg from "pg";
-import env from "dotenv";
-env.config();
+import pg from 'pg'
+const { Client } = pg
+ import env from "dotenv"
+env.config()
 
-let pool = new pg.Pool({
-  user: process.env.DB_USERNAME,
-  password: process.env.PASSWORD,
-  host: process.env.HOST,
-  port: process.env.DB_PORT,
-  database: process.env.DATABASE,
+const pool = new pg.Client({
+    user: "postgres",
+    password: "1235",
+    host: "localhost",
+    port: 5432,
+    database: "homework"
 });
+
+await pool.connect()
 
 export default pool;
